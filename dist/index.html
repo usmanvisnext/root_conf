@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>delta.ottu.com</title><meta name="importmap-type" content="systemjs-importmap"/><meta name="sentry-trace" content="{{ span.toSentryTrace() }}"/><meta name="baggage" content="{{ serializeBaggage(span.getBaggage()) }}"/><link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet"><script type="systemjs-importmap">{
+          "imports": {
+            "@ottu-mf/root-config": "/ottu-mf-root-config.js",
+            "@ottu-mf/navigation": "/navigation/js/app.js",
+            "@ottu-mf/frontend": "/ottu_frontend/js/app.js",
+            "@ottu-mf/fnb_frontend": "/fnb_frontend/js/app.js",
+            "@ottu-mf/estate": "https://estatefe.ottu.net/js/app.js",
+            "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.1/lib/system/single-spa.min.js",
+            "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js",
+            "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.1.6/dist/vue-router.min.js"
+          }
+        }</script><script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.4.2/dist/import-map-overrides.js"></script><script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script><script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js"></script></head><body><script>window.onload = function(){
+      if(window.location.pathname.startsWith('/en') || window.location.pathname.startsWith('/ar'))
+        return
+      else
+        window.location.href = '/en' + window.location.pathname
+    }
+    System.import('@ottu-mf/root-config');</script><import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full></body></html>
